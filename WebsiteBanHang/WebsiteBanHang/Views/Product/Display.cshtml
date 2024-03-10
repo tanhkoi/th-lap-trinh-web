@@ -1,10 +1,19 @@
 ﻿@model WebsiteBanHang.Models.Product 
-<h2>Product Details</h2>
+<h2>@Model.Name</h2>
 
 <div>
 	<h4>Name: @Model.Name</h4>
 	<h4>Price: @Model.Price</h4>
 	<h4>Description: @Model.Description</h4>
+	// 2.3.5	
+	@if (Model.ImageURLs != null)
+	{
+		<img src="@Model.ImageURL" alt="Product Image" />
+		@foreach (var imageURL in Model.ImageURLs)
+		{
+			<img src="@imageURL" alt="Product Image" />
+		}
+	}
 </div>
 
 <a asp-action='"Index"'>Back to List</a>

@@ -28,3 +28,4 @@ D:\laptrinhweb\WebsiteBanHang\WebsiteBanHang\obj\Debug\net8.0\refint\WebsiteBanH
 D:\laptrinhweb\WebsiteBanHang\WebsiteBanHang\obj\Debug\net8.0\WebsiteBanHang.pdb
 D:\laptrinhweb\WebsiteBanHang\WebsiteBanHang\obj\Debug\net8.0\WebsiteBanHang.genruntimeconfig.cache
 D:\laptrinhweb\WebsiteBanHang\WebsiteBanHang\obj\Debug\net8.0\ref\WebsiteBanHang.dll
+D:\laptrinhweb\WebsiteBanHang\WebsiteBanHang\obj\Debug\net8.0\WebsiteBanHang.sourcelink.json

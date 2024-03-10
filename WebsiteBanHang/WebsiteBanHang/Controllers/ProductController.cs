@@ -13,23 +13,36 @@ namespace WebsiteBanHang.Repositories
             _productRepository = productRepository;
             _categoryRepository = categoryRepository;
         }
-        public IActionResult AddProduct()
+        public IActionResult Add()
         {
             var categories = _categoryRepository.GetAllCategories();
             ViewBag.Categories = new SelectList(categories, "Id", "Name");
             return View();
         }
-        [HttpPost]
-        public IActionResult Add(Product product)
-        {
-            if (ModelState.IsValid)
-            {
-                _productRepository.Add(product);
-                return RedirectToAction("Index"); 
-            }
-            return View(product);
-        }
-        public IActionResult Index()
+        // 2.3.5
+		[HttpPost]
+		public async Task<IActionResult> Add(Product product, IFormFile imageURL, List<IFormFile> imageURLs)
+		{
+			if (ModelState.IsValid)
+			{
+				if (imageURL != null)
+				{
+					product.ImageURL = await SaveImage(imageURL);
+				}
+				if (imageURLs != null)
+				{
+					product.ImageURLs = new List<string>();
+					foreach (var file in imageURLs)
+					{
+						product.ImageURLs.Add(await SaveImage(file));
+					}
+				}
+				_productRepository.Add(product);
+				return RedirectToAction("Index");
+			}
+			return View(product);
+		}
+		public IActionResult Index()
         {
             var products = _productRepository.GetAll();
             return View(products);
@@ -77,5 +90,15 @@ namespace WebsiteBanHang.Repositories
             _productRepository.Delete(id); 
             return RedirectToAction("Index");
         }
-    }
+		// 2.3.5
+		private async Task<string> SaveImage(IFormFile image)
+		{
+			var savePath = Path.Combine("wwwroot/images", image.FileName);
+			using (var fileStream = new FileStream(savePath, FileMode.Create))
+			{
+				await image.CopyToAsync(fileStream);
+			}
+			return "/images/" + image.FileName;
+		}
+	}
 }

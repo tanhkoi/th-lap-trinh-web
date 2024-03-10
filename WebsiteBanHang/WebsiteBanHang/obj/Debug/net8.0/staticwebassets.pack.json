@@ -13,6 +13,14 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\laptrinhweb\\WebsiteBanHang\\WebsiteBanHang\\wwwroot\\images\\1a02444b0758aa06f349.jpg",
+      "PackagePath": "staticwebassets\\images\\1a02444b0758aa06f349.jpg"
+    },
+    {
+      "Id": "D:\\laptrinhweb\\WebsiteBanHang\\WebsiteBanHang\\wwwroot\\images\\370264927_1687232488438845_1617675654000871921_n.jpg",
+      "PackagePath": "staticwebassets\\images\\370264927_1687232488438845_1617675654000871921_n.jpg"
+    },
+    {
       "Id": "D:\\laptrinhweb\\WebsiteBanHang\\WebsiteBanHang\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
