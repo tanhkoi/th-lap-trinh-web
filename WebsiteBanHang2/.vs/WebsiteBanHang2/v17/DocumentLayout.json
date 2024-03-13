@@ -1,0 +1,149 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\laptrinhweb\\WebsiteBanHang2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9B0532A1-62A5-4689-8FC2-689FE392C284}|WebsiteBanHang2\\WebsiteBanHang2.csproj|d:\\laptrinhweb\\websitebanhang2\\websitebanhang2\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B0532A1-62A5-4689-8FC2-689FE392C284}|WebsiteBanHang2\\WebsiteBanHang2.csproj|solutionrelative:websitebanhang2\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B0532A1-62A5-4689-8FC2-689FE392C284}|WebsiteBanHang2\\WebsiteBanHang2.csproj|d:\\laptrinhweb\\websitebanhang2\\websitebanhang2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B0532A1-62A5-4689-8FC2-689FE392C284}|WebsiteBanHang2\\WebsiteBanHang2.csproj|solutionrelative:websitebanhang2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B0532A1-62A5-4689-8FC2-689FE392C284}|WebsiteBanHang2\\WebsiteBanHang2.csproj|d:\\laptrinhweb\\websitebanhang2\\websitebanhang2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B0532A1-62A5-4689-8FC2-689FE392C284}|WebsiteBanHang2\\WebsiteBanHang2.csproj|solutionrelative:websitebanhang2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B0532A1-62A5-4689-8FC2-689FE392C284}|WebsiteBanHang2\\WebsiteBanHang2.csproj|d:\\laptrinhweb\\websitebanhang2\\websitebanhang2\\repository\\efproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B0532A1-62A5-4689-8FC2-689FE392C284}|WebsiteBanHang2\\WebsiteBanHang2.csproj|solutionrelative:websitebanhang2\\repository\\efproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B0532A1-62A5-4689-8FC2-689FE392C284}|WebsiteBanHang2\\WebsiteBanHang2.csproj|d:\\laptrinhweb\\websitebanhang2\\websitebanhang2\\repository\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B0532A1-62A5-4689-8FC2-689FE392C284}|WebsiteBanHang2\\WebsiteBanHang2.csproj|solutionrelative:websitebanhang2\\repository\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B0532A1-62A5-4689-8FC2-689FE392C284}|WebsiteBanHang2\\WebsiteBanHang2.csproj|d:\\laptrinhweb\\websitebanhang2\\websitebanhang2\\repository\\efcategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B0532A1-62A5-4689-8FC2-689FE392C284}|WebsiteBanHang2\\WebsiteBanHang2.csproj|solutionrelative:websitebanhang2\\repository\\efcategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B0532A1-62A5-4689-8FC2-689FE392C284}|WebsiteBanHang2\\WebsiteBanHang2.csproj|d:\\laptrinhweb\\websitebanhang2\\websitebanhang2\\repository\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B0532A1-62A5-4689-8FC2-689FE392C284}|WebsiteBanHang2\\WebsiteBanHang2.csproj|solutionrelative:websitebanhang2\\repository\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B0532A1-62A5-4689-8FC2-689FE392C284}|WebsiteBanHang2\\WebsiteBanHang2.csproj|d:\\laptrinhweb\\websitebanhang2\\websitebanhang2\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B0532A1-62A5-4689-8FC2-689FE392C284}|WebsiteBanHang2\\WebsiteBanHang2.csproj|solutionrelative:websitebanhang2\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 224,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "D:\\laptrinhweb\\WebsiteBanHang2\\WebsiteBanHang2\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "WebsiteBanHang2\\Controllers\\ProductController.cs",
+              "ToolTip": "D:\\laptrinhweb\\WebsiteBanHang2\\WebsiteBanHang2\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "WebsiteBanHang2\\Controllers\\ProductController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABEAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T08:39:49.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\laptrinhweb\\WebsiteBanHang2\\WebsiteBanHang2\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "WebsiteBanHang2\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\laptrinhweb\\WebsiteBanHang2\\WebsiteBanHang2\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "WebsiteBanHang2\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T08:39:16.079Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\laptrinhweb\\WebsiteBanHang2\\WebsiteBanHang2\\Program.cs",
+              "RelativeDocumentMoniker": "WebsiteBanHang2\\Program.cs",
+              "ToolTip": "D:\\laptrinhweb\\WebsiteBanHang2\\WebsiteBanHang2\\Program.cs",
+              "RelativeToolTip": "WebsiteBanHang2\\Program.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAAAA4AAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T08:38:17.951Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EFProductRepository.cs",
+              "DocumentMoniker": "D:\\laptrinhweb\\WebsiteBanHang2\\WebsiteBanHang2\\Repository\\EFProductRepository.cs",
+              "RelativeDocumentMoniker": "WebsiteBanHang2\\Repository\\EFProductRepository.cs",
+              "ToolTip": "D:\\laptrinhweb\\WebsiteBanHang2\\WebsiteBanHang2\\Repository\\EFProductRepository.cs",
+              "RelativeToolTip": "WebsiteBanHang2\\Repository\\EFProductRepository.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwBkAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T07:51:38.843Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EFCategoryRepository.cs",
+              "DocumentMoniker": "D:\\laptrinhweb\\WebsiteBanHang2\\WebsiteBanHang2\\Repository\\EFCategoryRepository.cs",
+              "RelativeDocumentMoniker": "WebsiteBanHang2\\Repository\\EFCategoryRepository.cs",
+              "ToolTip": "D:\\laptrinhweb\\WebsiteBanHang2\\WebsiteBanHang2\\Repository\\EFCategoryRepository.cs",
+              "RelativeToolTip": "WebsiteBanHang2\\Repository\\EFCategoryRepository.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwBYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T08:30:17.063Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IProductRepository.cs",
+              "DocumentMoniker": "D:\\laptrinhweb\\WebsiteBanHang2\\WebsiteBanHang2\\Repository\\IProductRepository.cs",
+              "RelativeDocumentMoniker": "WebsiteBanHang2\\Repository\\IProductRepository.cs",
+              "ToolTip": "D:\\laptrinhweb\\WebsiteBanHang2\\WebsiteBanHang2\\Repository\\IProductRepository.cs",
+              "RelativeToolTip": "WebsiteBanHang2\\Repository\\IProductRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T08:36:25.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ICategoryRepository.cs",
+              "DocumentMoniker": "D:\\laptrinhweb\\WebsiteBanHang2\\WebsiteBanHang2\\Repository\\ICategoryRepository.cs",
+              "RelativeDocumentMoniker": "WebsiteBanHang2\\Repository\\ICategoryRepository.cs",
+              "ToolTip": "D:\\laptrinhweb\\WebsiteBanHang2\\WebsiteBanHang2\\Repository\\ICategoryRepository.cs",
+              "RelativeToolTip": "WebsiteBanHang2\\Repository\\ICategoryRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T07:49:36.9Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Category.cs",
+              "DocumentMoniker": "D:\\laptrinhweb\\WebsiteBanHang2\\WebsiteBanHang2\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "WebsiteBanHang2\\Models\\Category.cs",
+              "ToolTip": "D:\\laptrinhweb\\WebsiteBanHang2\\WebsiteBanHang2\\Models\\Category.cs",
+              "RelativeToolTip": "WebsiteBanHang2\\Models\\Category.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T08:36:05.572Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
