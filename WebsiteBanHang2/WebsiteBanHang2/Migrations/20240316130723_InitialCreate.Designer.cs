@@ -11,7 +11,7 @@ using WebsiteBanHang2.DataAccess;
 namespace WebsiteBanHang2.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240313074524_InitialCreate")]
+    [Migration("20240316130723_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
