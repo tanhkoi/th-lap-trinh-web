@@ -21,7 +21,7 @@ namespace WebsiteBanHang2.Controllers
 			return View(products);
 		}
 		// hien thi form them sp moi
-		public async Task<IActionResult> AddAsync()
+		public async Task<IActionResult> Add()
 		{
 			var categories = await _categoryRepository.GetAllAsync();
 			ViewBag.Categories = new SelectList(categories, "Id", "Name");
