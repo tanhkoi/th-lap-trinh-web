@@ -1,5 +1,6 @@
-*.bin
+*.metadata.v7.bin
 *.vsidx
-*.v2
+*.dtbcache.v2
+*.futcache.v2
 *.cache
 *.editorconfig
