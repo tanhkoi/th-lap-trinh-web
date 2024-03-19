@@ -1,0 +1,5 @@
+*.bin
+*.vsidx
+*.v2
+*.cache
+*.editorconfig
