@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using WebsiteBanHang2.DataAccess;
 using WebsiteBanHang2.Repository;
 
