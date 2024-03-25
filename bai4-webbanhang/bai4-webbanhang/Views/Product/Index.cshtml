@@ -1,61 +1,52 @@
-﻿@model IEnumerable<bai4_webbanhang.Models.Product>
+﻿@using bai4_webbanhang.DataAccess;
+@using Microsoft.EntityFrameworkCore;
+
+@model IEnumerable<bai4_webbanhang.Models.Product>
 
 @{
-    ViewData["Title"] = "Index";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+	ViewData["Title"] = "Index";
+	Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Index</h1>
+<h1>Danh sách sản phẩm</h1>
 
 <p>
-    <a asp-action="Add">Create New</a>
+	<a class="btn btn-primary" asp-action="Add">Tạo mới</a>
 </p>
 <table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Description)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Price)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ImageUrl)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Category)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Name)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Description)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Price)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.ImageUrl)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Category.Name)
-                </td>
-                <td>
-                    <a asp-action="Update" asp-route-id="@item.Id">Edit</a>
-                    <a asp-action="Display" asp-route-id="@item.Id">Details</a>
-                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-                </td>
-            </tr>
-        }
-    </tbody>
+	<tbody>
+		<div class="row">
+			@if (Model != null)
+			{
+				@foreach (var product in Model)
+				{
+					<div class="col-sm-3" style="padding: 20px;">
+						<div class="card" style="width: 18rem;">
+							@if (product.ImageUrl != null)
+							{
+								<img src="@product.ImageUrl" class="card-img-top" alt="...">
+							}
+							else
+							{
+								<img src="..." class="card-img-top" alt="...">
+							}
+							<div class="card-body">
+								<h5 class="card-title">@product.Name</h5>
+								<p class="card-text">@product.Description</p>
+								<p class="card-text">@product.Category?.Name ?? "Null"</p>
+								<p class="card-text">@product.Price</p>
+								<a class="btn btn-primary" asp-action="Display" asp-route-id="@product.Id">View</a>
+								<a class="btn btn-primary" asp-action="Update" asp-route-id="@product.Id">Edit</a>
+								<a class="btn btn-primary" asp-action="Delete" asp-route-id="@product.Id">Delete</a>
+							</div>
+						</div>
+					</div>
+				}
+			}
+			else
+			{
+				<p>No products found.</p>
+			}
+		</div>
+	</tbody>
 </table>

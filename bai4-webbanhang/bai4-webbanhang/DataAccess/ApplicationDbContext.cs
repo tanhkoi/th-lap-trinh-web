@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace bai4_webbanhang.DataAccess
 {
-    public class ApplicationDbContext : IdentityDbContext
+    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
         public DbSet<Product> Products { get; set; }

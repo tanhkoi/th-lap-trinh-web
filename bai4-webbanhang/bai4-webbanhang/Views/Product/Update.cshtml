@@ -1,4 +1,6 @@
-﻿@model bai4_webbanhang.Models.Product
+﻿﻿
+
+@model bai4_webbanhang.Models.Product
 
 @{
     ViewData["Title"] = "Update";
@@ -11,7 +13,7 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Update">
+        <form asp-action="Update" method="post" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Id" />
             <div class="form-group">
@@ -30,9 +32,8 @@
                 <span asp-validation-for="Price" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="ImageUrl" class="control-label"></label>
-                <input asp-for="ImageUrl" class="form-control" />
-                <span asp-validation-for="ImageUrl" class="text-danger"></span>
+                <label asp-for="ImageUrl">Image</label>
+                <input type="file" asp-for="ImageUrl" class="form-control" />
             </div>
             <div class="form-group">
                 <label asp-for="CategoryId" class="control-label"></label>
@@ -47,7 +48,7 @@
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a class="btn btn-primary" asp-action="Index">Back to List</a>
 </div>
 
 @section Scripts {
