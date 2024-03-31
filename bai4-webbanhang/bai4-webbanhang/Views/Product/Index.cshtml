@@ -33,7 +33,7 @@
 							<div class="card-body">
 								<h5 class="card-title">@product.Name</h5>
 								<p class="card-text">@product.Description</p>
-								<p class="card-text">@product.Category?.Name ?? "Null"</p>
+								<p class="card-text">@product.Category?.Name</p>
 								<p class="card-text">@product.Price</p>
 								<a class="btn btn-primary" asp-action="Display" asp-route-id="@product.Id">View</a>
 								<a class="btn btn-primary" asp-action="Update" asp-route-id="@product.Id">Edit</a>

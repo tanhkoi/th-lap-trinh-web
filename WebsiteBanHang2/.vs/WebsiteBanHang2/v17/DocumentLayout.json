@@ -70,8 +70,7 @@
               "RelativeToolTip": "WebsiteBanHang2\\Views\\Product\\Index.cshtml",
               "ViewState": "AQIAACUAAAAAAAAAAAAuwDwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-24T14:12:21.011Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-24T14:12:21.011Z"
             },
             {
               "$type": "Document",
@@ -96,8 +95,7 @@
               "RelativeToolTip": "WebsiteBanHang2\\Models\\ProductImage.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-24T14:09:35.831Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-24T14:09:35.831Z"
             },
             {
               "$type": "Document",
@@ -109,8 +107,7 @@
               "RelativeToolTip": "WebsiteBanHang2\\Repository\\EFProductRepository.cs",
               "ViewState": "AQIAAB8AAAAAAAAAAAAkwCoAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-24T14:07:06.884Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-24T14:07:06.884Z"
             },
             {
               "$type": "Document",
@@ -122,8 +119,7 @@
               "RelativeToolTip": "WebsiteBanHang2\\Repository\\ICategoryRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-24T14:07:37.411Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-24T14:07:37.411Z"
             },
             {
               "$type": "Document",
@@ -135,8 +131,7 @@
               "RelativeToolTip": "WebsiteBanHang2\\Repository\\IProductRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-24T14:07:29.936Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-24T14:07:29.936Z"
             },
             {
               "$type": "Document",
@@ -148,8 +143,7 @@
               "RelativeToolTip": "WebsiteBanHang2\\Repository\\EFCategoryRepository.cs",
               "ViewState": "AQIAABQAAAAAAAAAAAAgwCIAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-24T14:07:10.433Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-24T14:07:10.433Z"
             },
             {
               "$type": "Document",
@@ -161,8 +155,7 @@
               "RelativeToolTip": "WebsiteBanHang2\\Controllers\\ProductController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-24T13:26:59.158Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-24T13:26:59.158Z"
             },
             {
               "$type": "Document",
@@ -174,8 +167,7 @@
               "RelativeToolTip": "WebsiteBanHang2\\DataAccess\\ApplicationDbContext.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-24T13:40:29.248Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-24T13:40:29.248Z"
             },
             {
               "$type": "Document",
@@ -187,8 +179,7 @@
               "RelativeToolTip": "WebsiteBanHang2\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-24T13:25:35.639Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-24T13:25:35.639Z"
             },
             {
               "$type": "Document",
@@ -200,8 +191,7 @@
               "RelativeToolTip": "WebsiteBanHang2\\Models\\Product.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-24T13:37:14.958Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-24T13:37:14.958Z"
             },
             {
               "$type": "Document",
@@ -213,8 +203,7 @@
               "RelativeToolTip": "WebsiteBanHang2\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-03-24T13:25:34.839Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-24T13:25:34.839Z"
             }
           ]
         }
