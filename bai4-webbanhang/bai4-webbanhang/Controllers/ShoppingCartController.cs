@@ -1,7 +1,6 @@
 ﻿using bai4_webbanhang.DataAccess;
 using bai4_webbanhang.Helpers;
 using bai4_webbanhang.Models;
-using bai4_webbanhang.Repo;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -17,9 +16,14 @@ namespace bai4_webbanhang.Controllers
             _context = context;
             _userManager = userManager;
         }
-        public async Task<IActionResult> AddToCart(int productId, int quantity)
+
+        public IActionResult AddToCart(int productId, int quantity = 1)
         {
-            Product product = await GetProductFromDatabaseAsync(productId);
+            var product = _context.Products.Find(productId);
+            if (product == null)
+            {
+                return NotFound();
+            }
             var cartItem = new CartItem
             {
                 ProductId = productId,
@@ -30,14 +34,13 @@ namespace bai4_webbanhang.Controllers
             var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart") ?? new ShoppingCart();
             cart.AddItem(cartItem);
             HttpContext.Session.SetObjectAsJson("Cart", cart);
-            return RedirectToAction("Index");
+            return RedirectToAction("Index", "ShoppingCart");
         }
+
 
         public IActionResult Index()
         {
-            var cart =
-            HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart") ?? new
-            ShoppingCart();
+            var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart") ?? new ShoppingCart();
             return View(cart);
         }
         public IActionResult RemoveFromCart(int productId)
@@ -48,13 +51,13 @@ namespace bai4_webbanhang.Controllers
             return RedirectToAction("Index");
         }
 
-        public IActionResult UpdateCart(int productId, int quantity)
-        {
-            var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart") ?? new ShoppingCart();
-            cart.UpdateItem(productId, quantity);
-            HttpContext.Session.SetObjectAsJson("Cart", cart);
-            return RedirectToAction("Index");
-        }
+        //public IActionResult UpdateCart(int productId, int quantity)
+        //{
+        //    var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart") ?? new ShoppingCart();
+        //    cart.UpdateItem(productId, quantity);
+        //    HttpContext.Session.SetObjectAsJson("Cart", cart);
+        //    return RedirectToAction("Index");
+        //}
         private async Task<Product> GetProductFromDatabaseAsync(int productId)
         {
             return await _context.Products.Include(p => p.Category).FirstOrDefaultAsync(p => p.Id == productId);
@@ -67,11 +70,9 @@ namespace bai4_webbanhang.Controllers
         [HttpPost]
         public async Task<IActionResult> Checkout(Order order)
         {
-            var cart =
-            HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart");
+            var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart");
             if (cart == null || !cart.Items.Any())
             {
-                // Xử lý giỏ hàng trống...
                 return RedirectToAction("Index");
             }
             var user = await _userManager.GetUserAsync(User);

@@ -24,7 +24,7 @@ namespace bai4_webbanhang.Controllers
             return View(products);
         }
         // hien thi form them sp moi
-        //[Authorize(Roles = SD.Role_Admin)]
+        [Authorize(Roles = SD.Role_Admin)]
         public async Task<IActionResult> Add()
         {
             var categories = await _categoryRepository.GetAllAsync();
@@ -33,11 +33,11 @@ namespace bai4_webbanhang.Controllers
                 Console.WriteLine($"Category Id: {category.Id}, Name: {category.Name}");
             }
             ViewBag.Categories = new SelectList(categories, "Id", "Name");
-            return View();
+            return View("Index");
         }
 
         // xu li them sp moi
-        //[Authorize(Roles = SD.Role_Admin)]
+        [Authorize(Roles = SD.Role_Admin)]
         [HttpPost]
         public async Task<IActionResult> Add(Product product, IFormFile imageURL, List<ProductImage> imageURLs)
         {

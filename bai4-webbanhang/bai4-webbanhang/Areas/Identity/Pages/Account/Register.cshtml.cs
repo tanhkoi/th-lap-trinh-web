@@ -150,7 +150,6 @@ namespace bai4_webbanhang.Areas.Identity.Pages.Account
                 user.Name = Input.Name;
                 await _userStore.SetUserNameAsync(user, Input.Email, CancellationToken.None);
                 await _emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None);
-                user.UserName = Input.Name;
 
                 var result = await _userManager.CreateAsync(user, Input.Password);
 
