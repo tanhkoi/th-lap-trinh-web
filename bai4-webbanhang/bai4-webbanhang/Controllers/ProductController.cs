@@ -24,7 +24,7 @@ namespace bai4_webbanhang.Controllers
             return View(products);
         }
         // hien thi form them sp moi
-        [Authorize(Roles = SD.Role_Admin)]
+        //[Authorize(Roles = SD.Role_Admin)]
         public async Task<IActionResult> Add()
         {
             var categories = await _categoryRepository.GetAllAsync();
@@ -33,11 +33,11 @@ namespace bai4_webbanhang.Controllers
                 Console.WriteLine($"Category Id: {category.Id}, Name: {category.Name}");
             }
             ViewBag.Categories = new SelectList(categories, "Id", "Name");
-            return View("Index");
+            return View();
         }
 
         // xu li them sp moi
-        [Authorize(Roles = SD.Role_Admin)]
+        //[Authorize(Roles = SD.Role_Admin)]
         [HttpPost]
         public async Task<IActionResult> Add(Product product, IFormFile imageURL, List<ProductImage> imageURLs)
         {
@@ -48,7 +48,7 @@ namespace bai4_webbanhang.Controllers
                     product.ImageUrl = await SaveImage(imageURL);
                 }
                 await _productRepository.AddAsync(product);
-                //return RedirectToAction("Index");
+                return RedirectToAction("Index");
             }
             // neu modelstate khong hop le, hien thi form voi du lieu da nhap
             var categories = await _categoryRepository.GetAllAsync();
@@ -66,7 +66,7 @@ namespace bai4_webbanhang.Controllers
             return View(product);
         }
         // hien thi form cap nhat sp
-        [Authorize(Roles = SD.Role_Admin)]
+        //[Authorize(Roles = SD.Role_Admin)]
         public async Task<IActionResult> Update(int id)
         {
             var product = await _productRepository.GetByIdAsync(id);
@@ -80,7 +80,7 @@ namespace bai4_webbanhang.Controllers
         }
 
         // xu li cap nhat sp
-        [Authorize(Roles = SD.Role_Admin)]
+        //[Authorize(Roles = SD.Role_Admin)]
         [HttpPost]
         public async Task<IActionResult> Update(Product product, IFormFile imageURL, List<ProductImage> imageURLs)
         {
@@ -96,7 +96,7 @@ namespace bai4_webbanhang.Controllers
             return View(product);
         }
         // hien thi form xac nhan xoa sp
-        [Authorize(Roles = SD.Role_Admin)]
+        //[Authorize(Roles = SD.Role_Admin)]
         public async Task<IActionResult> Delete(int id)
         {
             var product = await _productRepository.GetByIdAsync(id);
@@ -107,14 +107,14 @@ namespace bai4_webbanhang.Controllers
             return View(product);
         }
         // xu ly xoa sp
-        [Authorize(Roles = SD.Role_Admin)]
+        //[Authorize(Roles = SD.Role_Admin)]
         [HttpPost, ActionName("Delete")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             await _productRepository.DeleteAsync(id);
             return RedirectToAction(nameof(Index));
         }
-        [Authorize(Roles = SD.Role_Admin)]
+        //[Authorize(Roles = SD.Role_Admin)]
         private async Task<string> SaveImage(IFormFile image)
         {
             var savePath = Path.Combine("wwwroot/images", image.FileName);
