@@ -8,9 +8,6 @@
 }
 
 <h1>Danh sách sản phẩm</h1>
-<p>
-	<a class="btn btn-primary" asp-action="Add">Tạo mới</a>
-</p>
 <table class="table">
 	<tbody>
 		<div class="row">
@@ -34,8 +31,6 @@
 								<p class="card-text">@product.Category?.Name</p>
 								<p class="card-text">@product.Price</p>
 								<a class="btn btn-primary" asp-action="Display" asp-route-id="@product.Id">View</a>
-								<a class="btn btn-primary" asp-action="Update" asp-route-id="@product.Id">Edit</a>
-								<a class="btn btn-primary" asp-action="Delete" asp-route-id="@product.Id">Delete</a>
 								<a class="btn btn-primary" asp-action="AddToCart" asp-controller="ShoppingCart" asp-route-productId="@product.Id">Đưa vào giỏ</a>
 							</div>
 						</div>

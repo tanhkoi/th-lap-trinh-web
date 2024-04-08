@@ -28,7 +28,6 @@
                 existingItem.Quantity = newQuantity;
             }
         }
-
         public void ClearCart()
         {
             Items.Clear();

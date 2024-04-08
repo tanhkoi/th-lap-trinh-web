@@ -1,0 +1,45 @@
+﻿@model IEnumerable<bai4_webbanhang.Models.Product>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<h1>Danh sách sản phẩm</h1>
+<a class="btn btn-primary" asp-action="Add">Add</a>
+
+<table class="table">
+	<tbody>
+		<div class="row">
+			@if (Model != null)
+			{
+				@foreach (var product in Model)
+				{
+					<div class="col-sm-3" style="padding: 20px;">
+						<div class="card" style="width: 18rem;">
+							@if (product.ImageUrl != null)
+							{
+								<img src="@product.ImageUrl" class="card-img-top" alt="...">
+							}
+							else
+							{
+								<img src="..." class="card-img-top" alt="...">
+							}
+							<div class="card-body">
+								<h5 class="card-title">@product.Name</h5>
+								<p class="card-text">@product.Description</p>
+								<p class="card-text">@product.Category?.Name</p>
+								<p class="card-text">@product.Price</p>
+								<a class="btn btn-primary" asp-action="Update" asp-route-id="@product.Id">Update</a>
+								<a class="btn btn-primary" asp-action="Delete" asp-route-id="@product.Id">Delete</a>
+							</div>
+						</div>
+					</div>
+				}
+			}
+			else
+			{
+				<p>No products found.</p>
+			}
+		</div>
+	</tbody>
+</table>
+

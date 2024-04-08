@@ -31,12 +31,11 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped<IEmailSender, EmailSender>();
 
-builder.Services.ConfigureApplicationCookie(options => {
+builder.Services.ConfigureApplicationCookie(options =>
+{
     options.LoginPath = $"/Identity/Account/Login";
     options.LogoutPath = $"/Identity/Account/Logout";
     options.LogoutPath = $"/Identity/Account/AccessDenied";
-
-
 });
 
 
@@ -49,19 +48,27 @@ if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
 }
+
 app.UseStaticFiles();
+
 app.MapRazorPages();
+
 app.UseRouting();
 
 app.UseAuthorization();
 
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Product}/{action=Index}/{id?}");
+//app.MapControllerRoute(
+//    name: "default",
+//    pattern: "{controller=Home}/{action=Index}/{id?}");
 
-app.MapControllerRoute(
-    name: "admin",
-    pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
-);
+//app.MapControllerRoute(
+//    name: "Admin", 
+//    pattern: "{area:exists}/{controller=ProductManager}/{action=Index}/{id?}");
 
+
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllerRoute(name: "Admin", pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+    endpoints.MapControllerRoute(name: "default", pattern: "{controller=Product}/{action=Index}/{id?}");
+});
 app.Run();

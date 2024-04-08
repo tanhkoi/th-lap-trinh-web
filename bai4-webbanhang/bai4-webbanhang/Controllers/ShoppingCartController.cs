@@ -1,12 +1,14 @@
 ﻿using bai4_webbanhang.DataAccess;
 using bai4_webbanhang.Helpers;
 using bai4_webbanhang.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace bai4_webbanhang.Controllers
 {
+    [Authorize]
     public class ShoppingCartController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -16,7 +18,11 @@ namespace bai4_webbanhang.Controllers
             _context = context;
             _userManager = userManager;
         }
-
+        public IActionResult Index()
+        {
+            var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart") ?? new ShoppingCart();
+            return View(cart);
+        }
         public IActionResult AddToCart(int productId, int quantity = 1)
         {
             var product = _context.Products.Find(productId);
@@ -36,13 +42,6 @@ namespace bai4_webbanhang.Controllers
             HttpContext.Session.SetObjectAsJson("Cart", cart);
             return RedirectToAction("Index", "ShoppingCart");
         }
-
-
-        public IActionResult Index()
-        {
-            var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart") ?? new ShoppingCart();
-            return View(cart);
-        }
         public IActionResult RemoveFromCart(int productId)
         {
             var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart") ?? new ShoppingCart();
@@ -50,7 +49,6 @@ namespace bai4_webbanhang.Controllers
             HttpContext.Session.SetObjectAsJson("Cart", cart);
             return RedirectToAction("Index");
         }
-
         //public IActionResult UpdateCart(int productId, int quantity)
         //{
         //    var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart") ?? new ShoppingCart();
@@ -62,7 +60,6 @@ namespace bai4_webbanhang.Controllers
         {
             return await _context.Products.Include(p => p.Category).FirstOrDefaultAsync(p => p.Id == productId);
         }
-
         public IActionResult Checkout()
         {
             return View(new Order());
